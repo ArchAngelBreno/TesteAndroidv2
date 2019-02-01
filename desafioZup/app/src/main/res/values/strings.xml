@@ -1,0 +1,19 @@
+<resources>
+    <string name="login_app_name">Desafio ZUP</string>
+    <string name="login_et_user">User</string>
+    <string name="login_et_password">Password</string>
+    <string name="login_btn">Login</string>
+
+    <string name="home_account_title">Conta</string>
+    <string name="home_balance_title">Saldo</string>
+    <string name="home_most_recently_invoices">Recentes</string>
+
+    <!-- Error -->
+    <string name="search_information_error">Falha ao carregar as informações.</string>
+    <string name="press_refresh">Toque para atualizar.</string>
+    <string name="error_on_refresh">Falha ao atualizar as informações.</string>
+    <string name="invalid_user_password">Usuario ou senha invalidos</string>
+    <string name="no_connection_error">Sem conexão com a Internet.Tente mais tarde</string>
+
+
+</resources>

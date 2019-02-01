@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="moderate_margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="high_margin">32dp</dimen>
+    <dimen name="login_button_height">48dp</dimen>
+    <dimen name="btn_margin">100dp</dimen>
+
+    <dimen name="user_information_size">16sp</dimen>
+    <dimen name="user_information_high_size">22sp</dimen>
+    <dimen name="user_information_default_size">18sp</dimen>
+    <dimen name="user_information_small_size">16sp</dimen>
+    <dimen name="statement_card_size">80dp</dimen>
+
+    <dimen name="et_size">16sp</dimen>
+    <dimen name="btn_size">16sp</dimen>
+    <dimen name="default_radius">7dp</dimen>
+    <dimen name="card_radius">7dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="default_stroke_width">1dp</dimen>
+
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/iv_bank_logo"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/login_et_user"
+        android:singleLine="true"
+        android:imeOptions="actionSend"
+        style="@style/basic_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bank_logo" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:hint="@string/login_et_password"
+        style="@style/basic_edit_text"
+        android:inputType="textPassword"
+        android:imeOptions="actionGo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_user" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="202dp"
+        android:layout_height="62dp"
+        android:text="@string/login_btn"
+        style="@style/basic_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <ProgressBar
+        android:id="@+id/pb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress_bar_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.Group
+        android:id="@+id/gr_login_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_referenced_ids="iv_bank_logo,et_user,et_password,btn_login" />
+
+    <include
+        android:id="@+id/include_login_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        layout="@layout/error_layout"/>
+
+
+</android.support.constraint.ConstraintLayout>

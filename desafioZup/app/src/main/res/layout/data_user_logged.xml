@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/rl_information"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beatifulBlue"
+    android:padding="@dimen/moderate_margin"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/account_big_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logout_2" />
+
+
+    <TextView
+        android:id="@+id/tv_account_title"
+        style="@style/account_small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_marginTop="@dimen/moderate_margin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/home_account_title" />
+
+    <TextView
+        android:id="@+id/tv_account_number"
+        app:layout_constraintTop_toBottomOf="@+id/tv_account_title"
+        style="@style/account_big_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_account_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin" />
+
+    <TextView
+        android:id="@+id/tv_balance_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_account_number"
+        style="@style/account_small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_account_number"
+        android:layout_marginTop="@dimen/moderate_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/home_balance_title" />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        style="@style/account_big_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
