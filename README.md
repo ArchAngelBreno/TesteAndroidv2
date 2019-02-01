@@ -1,3 +1,20 @@
+# Explicações geral sobre
+
+Para utilizar o projeto basta utilizar a ferramenta android studio instalada e importar o proejto
+
+- Arquitetura utilizada foi o MVP por ser simples e testavel
+
+- Tecnologias utilizadas: RxJava,Butterknife, Retrofit, Gson, Mockito
+
+# Observações
+
+- Não foram utilizadas tecnologias de injeção de dependencia pois do meu ponto de vista o custo x beneficio não seria de um nivel considerado bom
+
+# O que eu melhoraria
+
+- Os testes pois o meu conhecimento ainda é superficial dentro deste tipo de tecnologia e eu acredito que é de grande importancia para aplicações corportivas já que trás segurança a equipe de sustentação e aumenta a qualidade do codigo entregue ao cliente
+
+
 # Show me the code
 
 Esse repositório contem todo o material necessário para realizar o teste: 
